@@ -18,7 +18,15 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 1.) Create a valid, empty HTML page with the necessary tags.
 
 ```html
-<!-- Code goes here -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+</body>
+</html>
 ```
 
 2.) What are the differences between these tags?
@@ -32,7 +40,7 @@ This is a review of your working knowledge of HTML and CSS. Note that this revie
 ```
 
 ```
-Explain here.
+The img src is a self closing tag with a properties and values associated to it. The div tag is not a self closing tag and used for laying out a page.
 ```
 
 ---
@@ -57,7 +65,7 @@ Explain here.
 ```
 
 ```
-Explain here
+The first style tag is inline and added to specific tags on the HTML. Con is if you need to adjust styling you have to search line by line for it. Also unable to style multiple elements at the same time leading to more code than is necessary. Not typically recommended. Internal style sheet is still on the HTML page. Pro: all style tags are located in one section and can make multi-element changes, but still loads before the HTML, increasing load times and bounce rates.  External style sheet is best practice and is referenced in the head of the HTML page. 
 ```
 
 2.) Below are some different CSS selectors. Use CSS comments to describe what each selector will do.
@@ -65,27 +73,27 @@ Explain here
 ```css
 /* comment like this */
 div {
-  border-radius: 50%;
+  border-radius: 50%; //curve the edges of the element... this will be circular
 }
 
 .header p {
-  font-size: 18px;
+  font-size: 18px; ///changes the font size of the p tag with the class of header
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+.footer { 
+  position: absolute; // can be fixed to a certain position inside the parent element and not moved around by other elements
+  bottom: 0; //positions the footer at the bottom of the page
 }
 
 .splash-image {
-  background-image: url("../images/ocean.jpg");
-  background-size: cover;
-  width: 100%;
+  background-image: url("../images/ocean.jpg"); //adds a image to the background of .splash-image 
+  background-size: cover; //cover the entirety of the div
+  width: 100%; //takes 100% of the div or container it is in
 }
 
-.ninja:hover {
-  display: none;
-  color: black;
+.ninja:hover { //when hovering over .ninja
+  display: none; //this section will not be visible
+  color: black; //any text associated with this class will turn black on hover
 }
 ```
 
